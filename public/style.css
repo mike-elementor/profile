@@ -1,0 +1,45 @@
+*, ::before, ::after { box-sizing: border-box; }
+
+html, body {
+	width: 100%;
+	min-height: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: monospace;
+	color: #222;
+	background: linear-gradient(to bottom, #e0e0e0, #f0f0f0 25%, #ffffff 50%);
+}
+
+.title {
+	--title-height: 260px;
+	margin-block-start: clamp(5rem, calc(40% - var(--title-height)), 20vh);
+	margin-inline: 6rem;
+	height: var(--title-height);
+}
+
+h1 {
+	margin-block-start: 3rem;
+	font-size: 3rem;
+	text-align: center;
+	font-weight: 400;
+
+}
+
+.avatar {
+	width: 300px;
+	height: 300px;
+	overflow: hidden;
+	margin-inline: auto;
+	border-radius: 50%;
+	border: solid 12px #fff;
+	box-shadow: 2px 2px 8px #ccc;
+
+	img {
+		margin-block-start: -50px;
+		width: 290px;
+		height: auto;
+	}
+}
