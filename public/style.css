@@ -38,7 +38,8 @@ h1 {
 	box-shadow: 2px 2px 8px #ccc;
 
 	img {
-		margin-block-start: -50px;
+		margin-block-start: -8px;
+		margin-inline-start: -8px;
 		width: 290px;
 		height: auto;
 	}
